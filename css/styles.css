@@ -28,6 +28,25 @@ button {
   min-width: 200px;
   text-align: center;
 }
+
+.main-banner {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+  text-align: center;
+}
+
 .btn-main {
   padding: 10px 32px;
   font-weight: 700;
@@ -39,11 +58,13 @@ button {
 }
 
 .btn-portf {
+  display: inline-flex;
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  align-items: center;
   letter-spacing: 0.03em;
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -53,8 +74,26 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.btn-portf:hover,
-.btn-portf:focus {
+.btn-filter {
+  display: inline-flex;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border-color: transparent;
+  min-width: 73px;
+  margin-left: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -92,11 +131,6 @@ button {
 }
 .logo-f {
   color: var(--white-color);
-}
-.main-banner {
-  padding: 200px 0;
-  background: rgba(47, 48, 58, 0.8);
-  text-align: center;
 }
 
 .hero-title {
@@ -404,6 +438,16 @@ footer {
   width: 570px;
   margin-left: 15px;
 }
+
+.btn-portf::after {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  content: "";
+  background-image: url(../images/iconsend.svg);
+  background-size: contain;
+}
+
 .msngrs-f {
   display: flex;
 }
