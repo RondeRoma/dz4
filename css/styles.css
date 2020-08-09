@@ -97,6 +97,32 @@ button {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
+
+.icon-hover {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+.btn-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.btn-icon:hover {
+  fill: var(--white-color);
+}
+
+.icon-hover:hover {
+  background-color: var(--accent-color);
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -142,6 +168,16 @@ button {
   text-transform: uppercase;
   color: var(--white-color);
 }
+
+.mail-h::before {
+  display: inline-flex;
+  content: "";
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/mailpic.svg);
+  margin-right: 10px;
+}
+
 .features {
   padding: 94px 0;
 }
@@ -155,7 +191,15 @@ button {
 .features-cont .item:not(:last-child) {
   margin-right: 30px;
 }
+
+.pic-featers {
+  width: 70px;
+  height: 70px;
+}
+
 .img-feat {
+  width: 270px;
+  height: 120px;
   display: block;
   padding: 25px 100px;
   background-color: #f5f4fa;
@@ -228,6 +272,12 @@ padding: 25px 100px;
 .contact-h .link:focus {
   color: var(--accent-color);
 }
+
+.contact-h .mail-h:hover,
+.contact-h .mail-h:focus {
+  fill: var(--accent-color);
+}
+
 .our-team {
   background-color: #f5f4fa;
   padding: 94px 0;
@@ -322,6 +372,14 @@ padding: 25px 100px;
 
 .clients-list .items:not(:last-child) {
   margin-right: 30px;
+}
+
+.client-items {
+  fill: #afb1b8;
+}
+
+.client-items:hover {
+  fill: var(--accent-color);
 }
 
 .title-portf {
@@ -463,8 +521,30 @@ footer {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  color: var(--white-color);
 }
 
-.msngrs-f .msn-pdng:not(:last-child) {
-  padding-right: 10px;
+.msn-pdng:not(:last-child) {
+  margin-right: 10px;
+}
+
+.foot-icon {
+  display: block;
+
+  fill: var(--white-color);
+  width: 20px;
+  height: 20px;
+}
+
+.msn-pdng:hover {
+  background-color: var(--accent-color);
+}
+.msn-pdng {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
