@@ -213,10 +213,6 @@ button {
   background-color: #f5f4fa;
   margin-bottom: 30px;
 }
-/*
-padding: 25px 100px;
-  background-color: #f5f4fa;
-*/
 
 .profile {
   padding-bottom: 94px;
@@ -557,22 +553,23 @@ footer {
 
 .foot-icon {
   display: block;
-
   fill: var(--white-color);
   width: 20px;
   height: 20px;
 }
 
-.msn-pdng:hover,
-.msn-pdng:focus {
+.footer-link:hover,
+.footer-link:focus {
   background-color: var(--accent-color);
 }
-.msn-pdng {
+
+.footer-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
